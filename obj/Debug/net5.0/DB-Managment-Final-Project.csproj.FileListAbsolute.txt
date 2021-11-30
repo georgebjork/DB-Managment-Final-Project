@@ -1,0 +1,16 @@
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\bin\Debug\net5.0\DB-Managment-Final-Project.exe
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\bin\Debug\net5.0\DB-Managment-Final-Project.deps.json
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\bin\Debug\net5.0\DB-Managment-Final-Project.runtimeconfig.json
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\bin\Debug\net5.0\DB-Managment-Final-Project.runtimeconfig.dev.json
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\bin\Debug\net5.0\DB-Managment-Final-Project.dll
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\bin\Debug\net5.0\ref\DB-Managment-Final-Project.dll
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\bin\Debug\net5.0\DB-Managment-Final-Project.pdb
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\obj\Debug\net5.0\DB-Managment-Final-Project.csprojAssemblyReference.cache
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\obj\Debug\net5.0\DB-Managment-Final-Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\obj\Debug\net5.0\DB-Managment-Final-Project.AssemblyInfoInputs.cache
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\obj\Debug\net5.0\DB-Managment-Final-Project.AssemblyInfo.cs
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\obj\Debug\net5.0\DB-Managment-Final-Project.csproj.CoreCompileInputs.cache
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\obj\Debug\net5.0\DB-Managment-Final-Project.dll
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\obj\Debug\net5.0\ref\DB-Managment-Final-Project.dll
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\obj\Debug\net5.0\DB-Managment-Final-Project.pdb
+C:\Users\georg\Documents\School\DBMS\DB-Managment-Final-Project\obj\Debug\net5.0\DB-Managment-Final-Project.genruntimeconfig.cache
