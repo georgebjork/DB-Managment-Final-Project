@@ -8,6 +8,10 @@ namespace DB_Managment_Final_Project
     {
         static void Main(string[] args)
         {
+            String select = "SELECT s.name ";
+            String from = "FROM School s ";
+            String where = "WHERE ";
+
             Database db = new Database();
 
             String command = "";
@@ -20,21 +24,36 @@ namespace DB_Managment_Final_Project
             Console.WriteLine("Welcome to the college finder! This application will help you find a college that is right for you!");
             Console.WriteLine();
 
-            //display menu 
+            //display a list of filter 
+                //state
+                //tuitition 
+                //etc
 
-            //give an option of which option to select
-                //Filter on state 
-                //Filter on public or private
-                //Filter on max tuition 
-                //Filter on major offered 
-                //Filter on sports offered
+            Console.WriteLine("[0] Filter by State");
+            Console.WriteLine("[1] Filter by major name");
+            Console.WriteLine("[2] Filter by Degree name");
+            Console.WriteLine("[3] Filter by EC");
+            Console.WriteLine();
 
+            Console.Write("Select an option: ");
+            command = Console.ReadLine();
 
+            if(command == "0"){
+                Console.Write("Enter a state abbeviation: ");
+                command = Console.ReadLine();
 
-        }
+                from = from + ", Address a ";
+                where = where + "a.state = \'" + command + "\'" + " AND s.id = a.school_id ";
+            }
 
-        public void displayMenu(){
-            
+            String q = select + from + where;
+
+            db.Execute(q);
+
         } 
+
+
+            
+            
     }
 }
