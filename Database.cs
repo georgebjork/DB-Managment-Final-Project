@@ -9,10 +9,12 @@ namespace DB_Managment_Final_Project
     {
 
         //This is the string to connect to our DB
-        public String connectionString = "";
+        public String connectionString = "Provider=sqloledb;Data Source=cs1;Initial Catalog=CollegeFinder;User Id=gbjork23x;Password=2255110;";
 
         public OleDbCommand cmd = new OleDbCommand();
 
+         //Hold all of the queries
+        List<String> queries = new List<String>();
         
         public Database(){}
 
@@ -29,6 +31,8 @@ namespace DB_Managment_Final_Project
                 this.cmd.Connection = new OleDbConnection(this.connectionString);
                 this.cmd.Connection.Open();
                 Console.WriteLine("Huzzah! Connection has been established!");
+                //Once connection has been made, lets add all the queries to the queries list
+                addQueries();
             }
             //Catch if it cannot connect
             catch(Exception ex)
@@ -40,6 +44,10 @@ namespace DB_Managment_Final_Project
             return true;
         }
 
+        public void addQueries(){
+            //Add all queries
+            queries.Add("This is a query");
+        }
 
         //This will take in a command via a string and execute it
         public void Execute(String command)
