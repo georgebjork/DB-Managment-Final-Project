@@ -6,4 +6,8 @@
     <RootNamespace>DB_Managment_Final_Project</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
+  </ItemGroup>
+
 </Project>
