@@ -33,7 +33,8 @@ namespace DB_Managment_Final_Project
 
             while (command != "stop")
             {
-
+                
+                command = "";
                 //Console.Clear();
 
                 //This will be our main menu
@@ -178,13 +179,14 @@ namespace DB_Managment_Final_Project
                     db.Execute("exec filterOnStateDegreeTuition " + "\'" + parm1 + "\'" + ", " + "\'" + parm2 + "\'" + ", " + "\'" + int.Parse(parm3) + "\'");
                 }
 
+                else if(command == "stop"){}
+
 
                 //Run if there was not a valid command inputed
                 else
                 {
                     Console.WriteLine( command + " is not a valid command.");
                     Console.WriteLine();
-                    command = "";
                 }
 
             }
