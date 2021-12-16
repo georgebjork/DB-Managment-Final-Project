@@ -9,9 +9,7 @@ namespace DB_Managment_Final_Project
         static void Main(string[] args)
         {
 
-            String select = "SELECT s.name ";
-            String from = "FROM School s ";
-            String where = "WHERE ";
+            Console.Clear();
 
             Database db = new Database();
 
@@ -29,6 +27,8 @@ namespace DB_Managment_Final_Project
             while (command != "stop")
             {
 
+                //Console.Clear();
+
                 Console.WriteLine("[0] Filter by State");
                 Console.WriteLine("[1] Filter by major name");
                 Console.WriteLine("[2] Filter by Degree name");
@@ -37,6 +37,7 @@ namespace DB_Managment_Final_Project
                 Console.WriteLine("[5] Sort by Tutition");
                 Console.WriteLine("[6] Search by School Name");
                 Console.WriteLine("[7] Get all data");
+                Console.WriteLine("[8] Filter on State, Major, and, Tuition");
 
 
                 Console.Write("Select an option: ");
@@ -125,6 +126,22 @@ namespace DB_Managment_Final_Project
                 else if (command == "7")
                 {
                     db.Execute("exec allData");
+                }
+
+                else if (command == "8")
+                {
+                    String parm1, parm2, parm3;
+
+                    Console.Write("Enter the name of a major: ");
+                    parm1 = Console.ReadLine();
+
+                    Console.Write("Enter the name of a State: ");
+                    parm2 = Console.ReadLine();
+
+                    Console.Write("Enter a tution cost: ");
+                    parm3 = Console.ReadLine();
+                    
+                    db.Execute("exec filterOnStateDegreeTuition " + "\'" + parm1 + "\'" + ", " + "\'" + parm2 + "\'" + ", " + "\'" + int.Parse(parm3) + "\'");
                 }
 
 

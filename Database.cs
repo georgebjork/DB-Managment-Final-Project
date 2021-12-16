@@ -100,6 +100,7 @@ namespace DB_Managment_Final_Project
             //Anything else can just be a string
             else{
                 string str = rdr.GetString(i);
+                str = truncate(str);
                 Console.Write(str + " | ");
             }
         }
@@ -148,6 +149,17 @@ namespace DB_Managment_Final_Project
             //Close the reader now that we are done with it
             rdr.Close();
             Console.WriteLine();
+        }
+
+        //This will truncate a string to be a max of 26 charecters 
+        public String truncate(String str)
+        {
+            int max = 20;
+            if(str.Length >= max)
+            {
+                str = str.Substring(0, max);
+            }
+            return str;
         }
     }
     
